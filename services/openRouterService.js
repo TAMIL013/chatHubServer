@@ -1,7 +1,7 @@
 import { saveChat, updateChat } from './DBService.js';
-
 export async function createChatTitle(message) {
   try {
+    console.log("id here",process.env.OPENROUTER_API_KEY)
     const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: {
