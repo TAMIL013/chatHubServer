@@ -53,7 +53,7 @@ export function streamOpenRouter(messages, apiKey, res, chatId) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ 
-      "model": "openai/gpt-3.5-turbo",
+      "model": "deepseek/deepseek-r1-0528-qwen3-8b:free",
       "messages": messages,
       "stream": true
     }),
